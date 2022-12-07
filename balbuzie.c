@@ -25,6 +25,6 @@ int main(void) {
         j = 0;
         i++;
     }
-    // printf("%c", *stringa+2);    // dovrebbe stampare c
+    
     return 0;
 }
