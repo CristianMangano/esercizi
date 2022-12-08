@@ -4,9 +4,11 @@ stringa 'abcd' e restitutisce la stringa 'aaabbbcccddd' */
 #include <stdio.h>
 #define N 10
 #define REP 3
+typedef enum {FALSE, TRUE} Boolean;
 
 int main(void) {
     char stringa[N];
+    Boolean bool = TRUE;
 
     printf("inserisci una parola di massimo 10 caratteri\n");
     scanf("%s", stringa);
@@ -16,15 +18,22 @@ int main(void) {
     
     while (i < N)
     {
-        while (j < REP)
+        if (bool && j < REP)
         {
             printf("%c ", *(stringa + i));
             j++;
+        } else
+        {
+            j = 0;
+            bool = FALSE;
         }
-        
-        j = 0;
-        i++;
+
+        if (!bool)
+        {
+            i++;
+            bool = TRUE;
+        }
     }
-    
+    // printf("%c", *stringa+2);    // dovrebbe stampare c
     return 0;
 }
