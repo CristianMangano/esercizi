@@ -2,19 +2,19 @@
 stringa 'abcd' e restitutisce la stringa 'aaabbbcccddd' */
 
 #include <stdio.h>
-#define N 10    // il numero massimo di input
-#define REP 3   // le ripetizioni richieste
+#define N 10
+#define REP 3
 typedef enum {FALSE, TRUE} Boolean;
 
 int main(void) {
     char stringa[N];
-    Boolean bool = TRUE;
+    Boolean bool = TRUE;    // variabile bool del tipo Boolean
 
     printf("inserisci una parola di massimo 10 caratteri\n");
     scanf("%s", stringa);
     
-    int j = 0;  // indice generico
-    int i = 0;  // indice generico
+    int j = 0;
+    int i = 0;
     
     while (i < N)
     {
