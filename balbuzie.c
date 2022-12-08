@@ -11,8 +11,8 @@ int main(void) {
     printf("inserisci una parola di massimo 10 caratteri\n");
     scanf("%s", stringa);
     
-    int j = 0;
-    int i = 0;
+    int j = 0;  // indice generico
+    int i = 0;  // indice generico
     
     while (i < N)
     {
