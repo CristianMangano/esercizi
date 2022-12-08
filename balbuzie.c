@@ -2,8 +2,8 @@
 stringa 'abcd' e restitutisce la stringa 'aaabbbcccddd' */
 
 #include <stdio.h>
-#define N 10
-#define REP 3
+#define N 10    // il numero massimo di input
+#define REP 3   // le ripetizioni richieste
 typedef enum {FALSE, TRUE} Boolean;
 
 int main(void) {
@@ -18,7 +18,7 @@ int main(void) {
     
     while (i < N)
     {
-        if (bool && j < REP)
+        if ((bool) && (j < REP))
         {
             printf("%c ", *(stringa + i));
             j++;
