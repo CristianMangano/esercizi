@@ -34,6 +34,6 @@ int main(void) {
             bool = TRUE;
         }
     }
-    // printf("%c", *stringa+2);    // dovrebbe stampare c
+    
     return 0;
 }
