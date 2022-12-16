@@ -1,0 +1,5 @@
+Calcolare quanti elementi di un vettore v1 sono
+contenuti in quelli di un altro vettore v2.
+
+I due vettori possono avere dimensioni diverse 
+e i tipi di dato sono degli interi per semplicità.
