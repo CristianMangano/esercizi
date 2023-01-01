@@ -29,8 +29,8 @@ void main(void) {
   
   lista.array[lista.inizio_ll].data = 3;  // il dato fondamentale che decide dove verrà inserito l'input è inizio_ll
   
-  lista.inizio = lista.inizio_ll;  // mette il valore di inizio_ll in inizio
+  lista.inizio = lista.inizio_ll;  // mette il valore di inizio_ll in inizio --- mi dice dove puntare
   
-  lista.inizio_ll = temp; // il generico inizio della lista vuota (quello dichiarato subio dopo il main)
+  lista.inizio_ll = temp; // il generico inizio della lista vuota (quello dichiarato subio dopo il main) --- mi dice dove iniziare ad inserire elementi
   
 }
