@@ -23,7 +23,7 @@ void main(void) {
     
   lista.array[N - 1].prossimo = -1;
   
-  int temp;
+  int temp; // temp mi tiene in memoria il valore prossimo della lista in cui sto insrndo elementi
   temp = lista.array[lista.inizio_ll].prossimo; // lo specifico elemento della lista vuota che contiene l'indice prossimo
   lista.array[lista.inizio_ll].prossimo = lista.inizio; // mette il valore -1 nel campo prossimo del primo elemento della lista vuota
   
